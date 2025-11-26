@@ -2,7 +2,7 @@
 
 # Hi there, I'm Brock Denton 👋
 
-**Personal Apps | Quantum Computing | Websites | FinTech | Data Science | Marketing | Identity**
+**Technology for Business - Data | Marketing | Identity | Quantum**
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Brock-Denton&color=blue&label=Profile+Views)](https://github.com/Brock-Denton)
 [![Website](https://img.shields.io/badge/Website-brockdenton.com-00a8ff?style=flat&logo=google-chrome)](https://www.brockdenton.com/)
@@ -107,7 +107,6 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 [![Website](https://img.shields.io/badge/Website-brockdenton.com-00a8ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.brockdenton.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Brock_Denton-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brock-denton/)
-[![GitHub](https://img.shields.io/badge/GitHub-Brock--Denton-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Brock-Denton)
 
 </div>
 
