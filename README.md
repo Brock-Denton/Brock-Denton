@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Brock Denton ðŸ‘‹
+# Hi there, I'm Brock Denton 👋
 
 **Technology for Business - Data | Marketing | Identity | Quantum**
 
@@ -22,7 +22,7 @@ I'm a technology professional passionate about leveraging data, marketing, ident
 
 ---
 
-## ðŸš€ Featured Projects
+## 🚀 Featured Projects
 
 ### Personal Projects
 
@@ -91,7 +91,7 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 ---
 
-## ðŸ“Š GitHub Stats
+## 📊 GitHub Stats
 
 <div align="center">
 
@@ -105,13 +105,13 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 ---
 
-## ðŸ† Achievements
+## 🏆 Achievements
 
 ![Pull Shark](https://img.shields.io/badge/GitHub-Pull%20Shark-00a8ff?style=flat&logo=github)
 
 ---
 
-## ðŸŒ Connect With Me
+## 🌐 Connect With Me
 
 <div align="center">
 
@@ -125,6 +125,6 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 <div align="center">
 
-**XPRIZE** | **EST** | Building the future, one commit at a time ðŸš€
+**XPRIZE** | **EST** | Building the future, one commit at a time 🚀
 
 </div>
