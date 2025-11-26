@@ -14,11 +14,11 @@
 
 **About Me**
 
-I'm a technology professional who turns data, identity systems, marketing tools, and quantum tech into real business value. I build applications that make advanced technology practical.
+I'm a tech professional who turns data, identity systems, marketing tools, and quantum tech into real results. I build applications that make advanced technology simple, useful, and fast to adopt.
 
-For fun, I explore emerging tech, especially quantum computing. I like creating tools that automate work, improve experiences, and solve real problems. I've built everything from fitness trackers to quantum chemistry simulations to financial analysis tools, and I'm always ready to learn something new.
+For fun, I dive into emerging tech, especially quantum computing. I build tools that automate work, improve experiences, and solve real problems. I've created everything from fitness apps to quantum simulations to financial analysis platforms, and I'm always pushing into new territory.
 
-My goal is to keep pushing what's possible at the intersection of quantum computing and real-world applications. I want to work on projects that matter and collaborate with people who share the same drive to innovate.
+My goal is to stay at the edge of what's possible in quantum and practical applications. I want to create work that makes an impact and collaborate with people who move fast and experiment fearlessly.
 
 ---
 
@@ -114,6 +114,6 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 <div align="center">
 
-**XPRIZE** | **EST** | Building the future, one commit at a time 🚀
+**XPRIZE** | **Connecticut** | Building the future, one commit at a time 🚀
 
 </div>
