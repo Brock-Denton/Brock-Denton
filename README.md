@@ -24,7 +24,7 @@ My goal is to keep pushing what's possible at the intersection of quantum comput
 
 ## 🚀 Featured Projects
 
-### Personal Projects
+**Personal Projects**
 
 <div align="center">
 
@@ -44,7 +44,7 @@ A comprehensive workout tracking application to help you achieve your fitness go
 
 ---
 
-### Website Design and Build
+**Website Design and Build**
 
 <div align="center">
 
@@ -67,7 +67,7 @@ Automates the process of fetching, summarizing, and categorizing content from a 
 
 ---
 
-### Quantum Computing
+**Quantum Computing**
 
 <div align="center">
 
@@ -87,7 +87,7 @@ A system to verify quantum random number generators' outputs (QRNGs) and keep tr
 
 ---
 
-### FinTech
+**FinTech**
 
 <div align="center">
 
