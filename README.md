@@ -91,20 +91,6 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Brock's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Brock-Denton&show_icons=true&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Brock-Denton&layout=compact&theme=radical&hide_border=true)
-
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=Brock-Denton&theme=radical&hide_border=true)
-
-</div>
-
----
-
 ## 🌐 Connect With Me
 
 <div align="center">
