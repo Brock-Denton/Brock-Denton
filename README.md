@@ -28,13 +28,13 @@ My goal is to keep pushing what's possible at the intersection of quantum comput
 
 <div align="center">
 
-#### [uptime-react](https://github.com/Brock-Denton/uptime-react)
+#### uptime-react
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 
 A React-based application for monitoring website uptime and availability.
 
-#### [Workout-App](https://github.com/Brock-Denton/Workout-App)
+#### Workout-App
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 
@@ -48,7 +48,7 @@ A comprehensive workout tracking application to help you achieve your fitness go
 
 <div align="center">
 
-#### [brockdenton.com](https://www.brockdenton.com/)
+#### brockdenton.com
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
@@ -57,7 +57,7 @@ A comprehensive workout tracking application to help you achieve your fitness go
 
 Personal portfolio website showcasing professional work and projects.
 
-#### [urlsummarizer](https://github.com/Brock-Denton/urlsummarizer)
+#### urlsummarizer
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
@@ -71,14 +71,14 @@ Automates the process of fetching, summarizing, and categorizing content from a 
 
 <div align="center">
 
-#### [quantum-chemistry-h2](https://github.com/Brock-Denton/quantum-chemistry-h2)
+#### quantum-chemistry-h2
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 ![OpenFermion](https://img.shields.io/badge/OpenFermion-4285F4?style=flat&logo=google&logoColor=white)
 
 Exploring the basics of quantum chemistry simulations using OpenFermion and PySCF. This project dives into quantum computing applications in molecular modeling.
 
-#### [yquantum-scramble](https://github.com/Brock-Denton/yquantum-scramble)
+#### yquantum-scramble
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 A system to verify quantum random number generators' outputs (QRNGs) and keep track of the machine they were produced from. Ensures the integrity and traceability of quantum-generated randomness.
@@ -91,7 +91,7 @@ A system to verify quantum random number generators' outputs (QRNGs) and keep tr
 
 <div align="center">
 
-#### [FinTech-Investing-Platform](https://github.com/Brock-Denton/FinTech-Investing-Platform)
+#### FinTech-Investing-Platform
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
