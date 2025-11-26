@@ -95,19 +95,13 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 <div align="center">
 
-![Brock's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Brock-Denton&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00a8ff&icon_color=00a8ff)
+![Brock's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Brock-Denton&show_icons=true&theme=radical&hide_border=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Brock-Denton&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00a8ff)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Brock-Denton&layout=compact&theme=radical&hide_border=true)
 
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=Brock-Denton&theme=radical&hide_border=true&background=0D1117&ring=00a8ff&fire=00a8ff&currStreakLabel=00a8ff)
+![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=Brock-Denton&theme=radical&hide_border=true)
 
 </div>
-
----
-
-## 🏆 Achievements
-
-![Pull Shark](https://img.shields.io/badge/GitHub-Pull%20Shark-00a8ff?style=flat&logo=github)
 
 ---
 
