@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there, I'm Brock Denton 👋
+**Hi there, I'm Brock Denton 👋**
 
 **Technology for Business - Data | Marketing | Identity | Quantum**
 
@@ -12,7 +12,7 @@
 
 ---
 
-## About Me
+**About Me**
 
 I'm a technology professional who turns data, identity systems, marketing tools, and quantum tech into real business value. I build applications that make advanced technology practical.
 
@@ -22,7 +22,7 @@ My goal is to keep pushing what's possible at the intersection of quantum comput
 
 ---
 
-## 🚀 Featured Projects
+**🚀 Featured Projects**
 
 **Personal Projects**
 
@@ -101,7 +101,7 @@ A comprehensive platform that analyzes stocks and suggests trades based on risk 
 
 ---
 
-## 🌐 Connect With Me
+**🌐 Connect With Me**
 
 <div align="center">
 
