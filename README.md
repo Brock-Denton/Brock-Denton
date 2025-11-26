@@ -14,11 +14,11 @@
 
 ## About Me
 
-I'm a technology professional passionate about leveraging data, marketing, identity solutions, and quantum computing to solve complex business challenges. I enjoy building innovative applications that bridge the gap between cutting-edge technology and practical business value.
+I'm a technology professional who turns data, identity systems, marketing tools, and quantum tech into real business value. I build applications that make advanced technology practical.
 
-**What I do for fun with coding:** I love exploring emerging technologies, particularly quantum computing and its applications. I enjoy building tools that automate workflows, create better user experiences, and solve real-world problems. Whether it's a fitness tracking app, a quantum chemistry simulation, or a financial analysis platform, I'm always excited to dive into new domains and learn something new.
+For fun, I explore emerging tech, especially quantum computing. I like creating tools that automate work, improve experiences, and solve real problems. I've built everything from fitness trackers to quantum chemistry simulations to financial analysis tools, and I'm always ready to learn something new.
 
-**Aspirations:** My goal is to continue pushing the boundaries of what's possible with technology, especially in the intersection of quantum computing and practical applications. I'm passionate about contributing to projects that have meaningful impact and collaborating with others who share a curiosity for innovation.
+My goal is to keep pushing what's possible at the intersection of quantum computing and real-world applications. I want to work on projects that matter and collaborate with people who share the same drive to innovate.
 
 ---
 
