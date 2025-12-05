@@ -1,10 +1,6 @@
-### Hey! Nice to see you.
+### Welcome to my profile!
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Brock-Denton&color=blue&label=Profile+Views)](https://github.com/Brock-Denton)
-
----
-
-### Welcome to my profile!
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
