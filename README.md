@@ -1,4 +1,7 @@
-### Welcome to my profile!
+**Hi there, I'm Brock Denton 👋**
+
+**Technology for Business - Data | Marketing | Identity | Quantum**
+**Personal Apps | Quantum Computing | Websites | FinTech | Data Science | Marketing | Identity**
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Brock-Denton&color=blue&label=Profile+Views)](https://github.com/Brock-Denton)
 
