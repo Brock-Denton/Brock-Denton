@@ -1,119 +1,67 @@
-<div align="center">
-
-**Hi there, I'm Brock Denton 👋**
-
-**Personal Apps | Quantum Computing | Websites | FinTech | Data Science | Marketing | Identity**
+### Hey! Nice to see you.
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Brock-Denton&color=blue&label=Profile+Views)](https://github.com/Brock-Denton)
-[![Website](https://img.shields.io/badge/Website-brockdenton.com-00a8ff?style=flat&logo=google-chrome)](https://www.brockdenton.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Brock_Denton-0077b5?style=flat&logo=linkedin)](https://www.linkedin.com/in/brock-denton/)
-
-</div>
 
 ---
 
-**About Me**
+### Welcome to my profile!
 
-I'm a tech professional who turns data, identity systems, marketing tools, and quantum tech into real results. I build applications that make advanced technology simple, useful, and fast to adopt.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 
-For fun, I dive into emerging tech, especially quantum computing. I build tools that automate work, improve experiences, and solve real problems. I've created everything from fitness apps to quantum simulations to financial analysis platforms, and I'm always pushing into new territory.
+---
+
+### About
+
+I'm a tech professional who turns data, identity systems, marketing tools, and quantum tech into real results. I build applications that make advanced technology simple, useful, and fast to adopt. I specialize in personal apps, quantum computing, websites, FinTech, data science, marketing, and identity systems.
+
+I dive deep into emerging tech, especially quantum computing, and build tools that automate work, improve experiences, and solve real problems. I've created everything from fitness apps to quantum simulations to financial analysis platforms, and I'm always pushing into new territory.
 
 My goal is to stay at the edge of what's possible in quantum and practical applications. I want to create work that makes an impact and collaborate with people who move fast and experiment fearlessly.
 
 ---
 
-**🚀 Featured Projects**
+- 💼 I work at **XPRIZE** and specialize in quantum computing, FinTech, data science, and building innovative applications that bridge cutting-edge technology with practical solutions.
 
-**Personal Projects**
+- 🚀 I'm currently working on **uptime-react** (React-based uptime monitoring), **Workout-App** (fitness tracking), **urlsummarizer** (automated content curation), **quantum-chemistry-h2** (quantum chemistry simulations with OpenFermion), **yquantum-scramble** (quantum random number generator verification), and **FinTech-Investing-Platform** (intelligent stock analysis and trading suggestions).
 
-<div align="center">
+- 🌐 My personal portfolio website: **[brockdenton.com](https://www.brockdenton.com/)** - showcasing my professional work and projects.
 
-#### [uptime-react](https://github.com/Brock-Denton/uptime-react)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+- 📚 I'm currently learning many things, I believe that every day is a learning opportunity. Always exploring the latest in quantum computing, emerging technologies, and new frameworks.
 
-A React-based application for monitoring website uptime and availability.
+- 💬 Ask me about **quantum computing**, **FinTech applications**, **data science**, **web development with React**, **Python automation**, **identity systems**, and **marketing technology**.
 
-#### [Workout-App](https://github.com/Brock-Denton/Workout-App)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+- 📫 You can reach me at **[LinkedIn](https://www.linkedin.com/in/brock-denton/)** or through my **[website](https://www.brockdenton.com/)**.
 
-A comprehensive workout tracking application to help you achieve your fitness goals.
+- 📍 Location: **Connecticut, USA**
 
-</div>
+- 🎯 Fun fact: I love diving into emerging tech and experimenting fearlessly with new ideas. I'm passionate about making complex technology accessible and useful, and I thrive on solving problems that haven't been solved before.
+
+- 🛠️ **Tools**: VS Code, Jupyter Notebooks, Docker, Git, Chrome DevTools, Postman, various quantum computing frameworks (Qiskit, OpenFermion, PySCF), data analysis tools (Pandas, NumPy), and the terminal with PowerShell on Windows.
 
 ---
 
-**Website Design and Build**
-
-<div align="center">
-
-#### [brockdenton.com](https://www.brockdenton.com/)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-
-Personal portfolio website showcasing professional work and projects.
-
-#### [urlsummarizer](https://github.com/Brock-Denton/urlsummarizer)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-
-Automates the process of fetching, summarizing, and categorizing content from a list of URLs. Perfect for content curation and research workflows.
-
-</div>
-
----
-
-**Quantum Computing**
-
-<div align="center">
-
-#### [quantum-chemistry-h2](https://github.com/Brock-Denton/quantum-chemistry-h2)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-![OpenFermion](https://img.shields.io/badge/OpenFermion-4285F4?style=flat&logo=google&logoColor=white)
-
-Exploring the basics of quantum chemistry simulations using OpenFermion and PySCF. This project dives into quantum computing applications in molecular modeling.
-
-#### [yquantum-scramble](https://github.com/Brock-Denton/yquantum-scramble)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-
-A system to verify quantum random number generators' outputs (QRNGs) and keep track of the machine they were produced from. Ensures the integrity and traceability of quantum-generated randomness.
-
-</div>
-
----
-
-**FinTech**
-
-<div align="center">
-
-#### [FinTech-Investing-Platform](https://github.com/Brock-Denton/FinTech-Investing-Platform)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-
-A comprehensive platform that analyzes stocks and suggests trades based on risk profile. Combines data analysis with financial modeling to provide intelligent investment insights.
-
-</div>
-
----
-
-**🌐 Connect With Me**
-
-<div align="center">
+### 🌐 Connect With Me
 
 [![Website](https://img.shields.io/badge/Website-brockdenton.com-00a8ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.brockdenton.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Brock_Denton-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brock-denton/)
 
-</div>
-
 ---
 
 <div align="center">
 
-**XPRIZE** | **Connecticut** | Building the future, one commit at a time 🚀
+Building the future, one commit at a time 🚀
 
 </div>
