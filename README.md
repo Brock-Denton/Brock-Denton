@@ -3,7 +3,7 @@
 **Hi there, I'm Brock Denton 👋**
 
 **Technology for Business - Data | Marketing | Identity |**
-**Personal Apps | Quantum Computing | Websites | FinTech | Data Science | Marketing | Identity**
+**Personal Apps | Quantum Computing | Websites | FinTech | Data Science**
 
 [![Profile Views](https://komarev.com/ghpvc/?username=Brock-Denton&color=blue&label=Profile+Views)](https://github.com/Brock-Denton)
 [![Website](https://img.shields.io/badge/Website-brockdenton.com-00a8ff?style=flat&logo=google-chrome)](https://www.brockdenton.com/)
