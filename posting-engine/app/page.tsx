@@ -63,12 +63,38 @@ export default function Page() {
   }
 
   async function copy(id: string, text: string) {
+    let ok = false;
     try {
-      await navigator.clipboard.writeText(text);
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        ok = true;
+      }
+    } catch {
+      ok = false;
+    }
+    if (!ok) {
+      // Fallback for mobile and in-app browsers where the clipboard API is blocked.
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.top = "0";
+        ta.style.left = "0";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        ta.setSelectionRange(0, text.length);
+        ok = document.execCommand("copy");
+        document.body.removeChild(ta);
+      } catch {
+        ok = false;
+      }
+    }
+    if (ok) {
       setCopied(id);
       setTimeout(() => setCopied((c) => (c === id ? null : c)), 1500);
-    } catch {
-      /* ignore */
     }
   }
 
