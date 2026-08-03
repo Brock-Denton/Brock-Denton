@@ -71,6 +71,7 @@ a {
   display: flex;
   gap: 0.4rem;
   margin-bottom: 1.4rem;
+  flex-wrap: wrap;
 }
 
 .tab {
@@ -287,6 +288,127 @@ button.ghost:hover {
   letter-spacing: 0.1em;
   color: var(--faint);
   margin: 1.6rem 0 0.4rem;
+}
+
+.post-today {
+  border-color: color-mix(in srgb, var(--clay) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--clay) 30%, transparent);
+}
+
+.slot-pillar {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+  margin-bottom: 0.4rem;
+}
+
+.plan-h {
+  font-family: inherit;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clay);
+  margin: 0 0 0.7rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 0.5rem;
+}
+
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.7rem;
+  background: var(--elev);
+  text-align: center;
+}
+
+.stat-n {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.stat-l {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.phase {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  margin-top: 0.6rem;
+  background: var(--elev);
+}
+
+.phase-now {
+  border-color: color-mix(in srgb, var(--clay) 50%, transparent);
+  background: color-mix(in srgb, var(--clay) 8%, var(--elev));
+}
+
+.phase-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.phase-badge {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a0f08;
+  background: var(--clay);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-weight: 700;
+}
+
+.phase-d {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.tips {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.tips li {
+  font-size: 0.92rem;
+  color: var(--fg);
+}
+
+.target {
+  border-top: 1px solid var(--line);
+  padding: 0.7rem 0 0.2rem;
+}
+
+.target:first-of-type {
+  border-top: none;
+}
+
+.target-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.target-accts {
+  font-family: ui-monospace, monospace;
+  font-size: 0.78rem;
+  color: var(--cyan);
 }
 
 @media (max-width: 620px) {

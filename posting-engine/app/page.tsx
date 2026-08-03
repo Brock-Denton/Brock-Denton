@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { PILLARS, SCHEDULE, type PillarKey, type Platform } from "@/lib/voice";
+import { CAMPAIGN, AUTOMATION_PHASES, REPLY_STRATEGY, REPLY_TARGETS, REPLY_LOOP } from "@/lib/plan";
 
 type Draft = {
   id: string;
@@ -21,7 +22,7 @@ function uid() {
 }
 
 export default function Page() {
-  const [tab, setTab] = useState<"generate" | "replies" | "schedule">("generate");
+  const [tab, setTab] = useState<"week" | "replies" | "plan" | "custom" | "schedule">("week");
   return (
     <div className="wrap">
       <div className="top">
@@ -29,26 +30,160 @@ export default function Page() {
           <div className="brand">
             <b>tokenmaxxing</b> posting engine
           </div>
-          <div className="tagline">generate in your voice, review, then post.</div>
+          <div className="tagline">your week, written for you. copy, paste, done.</div>
         </div>
       </div>
 
       <div className="tabs">
-        <button className={`tab ${tab === "generate" ? "active" : ""}`} onClick={() => setTab("generate")}>
-          Generate
+        <button className={`tab ${tab === "week" ? "active" : ""}`} onClick={() => setTab("week")}>
+          This week
         </button>
         <button className={`tab ${tab === "replies" ? "active" : ""}`} onClick={() => setTab("replies")}>
           Replies
+        </button>
+        <button className={`tab ${tab === "plan" ? "active" : ""}`} onClick={() => setTab("plan")}>
+          Plan
+        </button>
+        <button className={`tab ${tab === "custom" ? "active" : ""}`} onClick={() => setTab("custom")}>
+          Custom
         </button>
         <button className={`tab ${tab === "schedule" ? "active" : ""}`} onClick={() => setTab("schedule")}>
           Schedule
         </button>
       </div>
 
-      {tab === "generate" && <Generate />}
+      {tab === "week" && <ThisWeek />}
       {tab === "replies" && <Replies />}
+      {tab === "plan" && <PlanView />}
+      {tab === "custom" && <Generate />}
       {tab === "schedule" && <ScheduleView />}
     </div>
+  );
+}
+
+const DAY_INDEX: Record<string, number> = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+type WeekItem = { day: string; time: string; platform: string; pillar: string; text: string; editing?: boolean };
+
+const WEEK_KEY = "posting-engine.week.v1";
+
+function ThisWeek() {
+  const [items, setItems] = useState<WeekItem[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [regen, setRegen] = useState<number | null>(null);
+  const [error, setError] = useState("");
+  const [today, setToday] = useState<number | null>(null);
+
+  useEffect(() => {
+    setToday(new Date().getDay());
+    try {
+      const raw = localStorage.getItem(WEEK_KEY);
+      if (raw) setItems(JSON.parse(raw));
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  function persist(next: WeekItem[]) {
+    setItems(next);
+    try {
+      localStorage.setItem(WEEK_KEY, JSON.stringify(next));
+    } catch {
+      /* ignore */
+    }
+  }
+
+  async function planWeek() {
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/week", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to plan the week.");
+      persist(data.week as WeekItem[]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Failed to plan the week.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function regenerate(i: number) {
+    setRegen(i);
+    try {
+      const slot = items[i];
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pillar: slot.pillar, platform: slot.platform, count: 1 }),
+      });
+      const data = await res.json();
+      if (res.ok && data.posts?.[0]) {
+        persist(items.map((it, idx) => (idx === i ? { ...it, text: data.posts[0], editing: false } : it)));
+      }
+    } catch {
+      /* ignore */
+    } finally {
+      setRegen(null);
+    }
+  }
+
+  function update(i: number, patch: Partial<WeekItem>) {
+    persist(items.map((it, idx) => (idx === i ? { ...it, ...patch } : it)));
+  }
+
+  async function copy(text: string) {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  return (
+    <>
+      <div className="card">
+        <p className="hint" style={{ margin: "0 0 0.8rem" }}>
+          One click writes your whole week. Each post already has its day, time, and platform. When that time comes, copy it and paste it. That is all you do.
+        </p>
+        <button className="primary" onClick={planWeek} disabled={loading}>
+          {loading ? "Writing your week..." : items.length ? "Rewrite this week" : "Plan my week"}
+        </button>
+        {error && <p className="err">{error}</p>}
+      </div>
+
+      {items.map((it, i) => {
+        const isToday = today !== null && DAY_INDEX[it.day] === today;
+        return (
+          <div className={`post ${isToday ? "post-today" : ""}`} key={`${it.day}-${it.time}-${i}`}>
+            <div className="meta">
+              <span className="chip">
+                {it.day} {it.time} · {it.platform}
+                {isToday ? " · today" : ""}
+              </span>
+              <CharCount text={it.text} platform={it.platform} />
+            </div>
+            <div className="slot-pillar">{it.pillar}</div>
+            {it.editing ? (
+              <textarea value={it.text} onChange={(e) => update(i, { text: e.target.value })} />
+            ) : (
+              <div className="body">{it.text}</div>
+            )}
+            <div className="actions">
+              <button className="primary" onClick={() => copy(it.text)}>
+                Copy
+              </button>
+              <button className="ghost" onClick={() => update(i, { editing: !it.editing })}>
+                {it.editing ? "Done" : "Edit"}
+              </button>
+              <button className="ghost" onClick={() => regenerate(i)} disabled={regen === i}>
+                {regen === i ? "..." : "Regenerate"}
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 }
 
@@ -299,7 +434,9 @@ function Replies() {
             {loading ? "Drafting..." : "Draft replies"}
           </button>
         </div>
-        <p className="hint">Drafts land here for you to send by hand. Nothing posts automatically.</p>
+        <p className="hint">
+          Paste a post from one of your target accounts (see the Plan tab), get options in your voice, send the one you like. Nothing posts automatically.
+        </p>
         {error && <p className="err">{error}</p>}
       </div>
 
@@ -317,6 +454,88 @@ function Replies() {
           </div>
         </div>
       ))}
+    </>
+  );
+}
+
+function PlanView() {
+  return (
+    <>
+      <div className="card">
+        <h3 className="plan-h">The estimate</h3>
+        <p className="hint" style={{ margin: "0 0 0.9rem" }}>
+          {CAMPAIGN.summary}
+        </p>
+        <div className="stats">
+          <div className="stat">
+            <div className="stat-n">{CAMPAIGN.xPerWeek}/wk</div>
+            <div className="stat-l">X posts</div>
+          </div>
+          <div className="stat">
+            <div className="stat-n">{CAMPAIGN.linkedinPerWeek}/wk</div>
+            <div className="stat-l">LinkedIn posts</div>
+          </div>
+          <div className="stat">
+            <div className="stat-n">~{CAMPAIGN.xPerYear}</div>
+            <div className="stat-l">X posts / year</div>
+          </div>
+          <div className="stat">
+            <div className="stat-n">~{CAMPAIGN.linkedinPerYear}</div>
+            <div className="stat-l">LinkedIn / year</div>
+          </div>
+        </div>
+        <p className="hint" style={{ marginTop: "0.9rem" }}>
+          {CAMPAIGN.horizon}
+        </p>
+      </div>
+
+      <div className="card">
+        <h3 className="plan-h">The path to hands-off</h3>
+        {AUTOMATION_PHASES.map((p) => (
+          <div className={`phase ${p.now ? "phase-now" : ""}`} key={p.phase}>
+            <div className="phase-top">
+              <span className="chip">{p.phase}</span>
+              <b>{p.title}</b>
+              {p.now && <span className="phase-badge">you are here</span>}
+            </div>
+            <p className="phase-d">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="card">
+        <h3 className="plan-h">Replies are the growth engine</h3>
+        <ul className="tips">
+          {REPLY_STRATEGY.map((s, i) => (
+            <li key={i}>{s}</li>
+          ))}
+        </ul>
+        <p className="hint" style={{ margin: "0.8rem 0 0.2rem" }}>
+          <b>Now:</b> {REPLY_LOOP.now}
+        </p>
+        <p className="hint" style={{ margin: "0.2rem 0" }}>
+          <b>Next:</b> {REPLY_LOOP.next}
+        </p>
+        <p className="hint" style={{ margin: "0.2rem 0 0" }}>
+          <b>Later:</b> {REPLY_LOOP.later}
+        </p>
+      </div>
+
+      <div className="card">
+        <h3 className="plan-h">Who to follow and reply to</h3>
+        <p className="hint" style={{ margin: "0 0 0.8rem" }}>
+          A starting list, grouped by why they matter. Verify the handles before wiring up any automation.
+        </p>
+        {REPLY_TARGETS.map((t) => (
+          <div className="target" key={t.group}>
+            <div className="target-top">
+              <b>{t.group}</b>
+              <span className="target-accts">{t.accounts.join("  ")}</span>
+            </div>
+            <p className="phase-d">{t.why}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
