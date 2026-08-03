@@ -73,6 +73,10 @@ function ThisWeek() {
   const [regen, setRegen] = useState<number | null>(null);
   const [error, setError] = useState("");
   const [today, setToday] = useState<number | null>(null);
+  const [xStatus, setXStatus] = useState("");
+  const [xChecking, setXChecking] = useState(false);
+  const [posting, setPosting] = useState<number | null>(null);
+  const [posted, setPosted] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     setToday(new Date().getDay());
@@ -140,15 +144,56 @@ function ThisWeek() {
     }
   }
 
+  async function checkX() {
+    setXChecking(true);
+    setXStatus("");
+    try {
+      const res = await fetch("/api/x/verify");
+      const data = await res.json();
+      setXStatus(data.ok ? `Connected as @${data.username}` : `Not connected: ${data.error}`);
+    } catch {
+      setXStatus("Could not check the connection.");
+    } finally {
+      setXChecking(false);
+    }
+  }
+
+  async function postX(i: number) {
+    setPosting(i);
+    try {
+      const res = await fetch("/api/x/post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: items[i].text }),
+      });
+      const data = await res.json();
+      if (res.ok && data.ok) {
+        setPosted((p) => ({ ...p, [i]: true }));
+      } else {
+        setXStatus(`Post failed: ${data.error || "unknown error"}`);
+      }
+    } catch {
+      setXStatus("Post failed.");
+    } finally {
+      setPosting(null);
+    }
+  }
+
   return (
     <>
       <div className="card">
         <p className="hint" style={{ margin: "0 0 0.8rem" }}>
-          One click writes your whole week. Each post already has its day, time, and platform. When that time comes, copy it and paste it. That is all you do.
+          One click writes your whole week. Each post already has its day, time, and platform. Post it to X in one tap, or copy it. LinkedIn you paste yourself.
         </p>
-        <button className="primary" onClick={planWeek} disabled={loading}>
-          {loading ? "Writing your week..." : items.length ? "Rewrite this week" : "Plan my week"}
-        </button>
+        <div className="actions" style={{ marginTop: 0 }}>
+          <button className="primary" onClick={planWeek} disabled={loading}>
+            {loading ? "Writing your week..." : items.length ? "Rewrite this week" : "Plan my week"}
+          </button>
+          <button className="ghost" onClick={checkX} disabled={xChecking}>
+            {xChecking ? "Checking..." : "Check X connection"}
+          </button>
+        </div>
+        {xStatus && <p className="hint" style={{ marginTop: "0.5rem" }}>{xStatus}</p>}
         {error && <p className="err">{error}</p>}
       </div>
 
@@ -170,7 +215,12 @@ function ThisWeek() {
               <div className="body">{it.text}</div>
             )}
             <div className="actions">
-              <button className="primary" onClick={() => copy(it.text)}>
+              {it.platform === "X" ? (
+                <button className="primary" onClick={() => postX(i)} disabled={posting === i || posted[i]}>
+                  {posted[i] ? "Posted ✓" : posting === i ? "Posting..." : "Post to X"}
+                </button>
+              ) : null}
+              <button className="ghost" onClick={() => copy(it.text)}>
                 Copy
               </button>
               <button className="ghost" onClick={() => update(i, { editing: !it.editing })}>
