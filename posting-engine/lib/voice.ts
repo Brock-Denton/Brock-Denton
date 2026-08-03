@@ -58,7 +58,7 @@ export const GOLD_EXAMPLES: { pillar: PillarKey; platform: Platform; text: strin
   {
     pillar: "The idea",
     platform: "both",
-    text: "The plans are the easy part to buy. Using them well is the part almost no one has solved yet.\nI've been building something that gets more out of the AI you're already paying for.\ntrytokenmaxxing.com",
+    text: "The plans are the easy part to buy. Using them well is the part most people haven't solved yet.\nI've been building something that gets more out of the AI you're already paying for.\ntrytokenmaxxing.com",
   },
   {
     pillar: "Build in public",
@@ -73,22 +73,22 @@ export const GOLD_EXAMPLES: { pillar: PillarKey; platform: Platform; text: strin
   {
     pillar: "Observations",
     platform: "both",
-    text: "The models this year are good enough that the model isn't the bottleneck anymore.\nHow well you put it to work is.\nThat shift is the interesting part to build in right now.",
+    text: "The models this year are good enough that the model isn't really the bottleneck anymore.\nHow well you put it to work is.\nThat's the part I keep thinking about.",
   },
   {
     pillar: "Observations",
     platform: "X",
-    text: "Everyone's asking which model is best.\nI keep landing on a different question: are you actually using the one you already pay for to its full extent?\nUsually the answer is no. That's the part I find worth solving.",
+    text: "Everyone's asking which model is best.\nThe question I keep coming back to is whether you're using the one you already pay for to its full extent.\nMostly, there's room left.",
   },
   {
     pillar: "What I learned",
     platform: "both",
-    text: "One thing I've picked up building autonomous tools: the hard part isn't getting it to start.\nIt's getting it to know when it's actually done.\nThat's where most of my time goes now.",
+    text: "Something I've picked up: most wasted AI spend isn't the model being too small.\nIt's the plan sitting there barely used while you're busy.\nThat's the waste I've been building to fix.",
   },
   {
     pillar: "The bigger picture",
     platform: "both",
-    text: "There's a version of AI that's just spending more on everything.\nI'm more interested in the opposite. Getting more out of what you already pay for, using the right size tool for the job.\nThat's the direction I'm building in.",
+    text: "I keep coming back to the same idea: get more out of the AI you already pay for.\nMore value per dollar, less of it sitting unused, the right size tool for the job.\nThat's the direction I'm building in.",
   },
 ];
 
@@ -112,6 +112,11 @@ HARD RULES — never break these:
 - Never say something is "figured out" or "solved" about himself. He is learning and building, not finished.
 - Prefer "I've been" over "Been". Write proper contractions when natural, but not clipped old-timey phrasing.
 - Keep it human and real. No corporate voice, no LinkedIn-guru voice, no thread-bait hooks like "Here's why:".
+- Never put other people down or imply they are not smart or have not figured something out. There are many smart people. Avoid "almost no one", "nobody has solved". Prefer "most people haven't solved it yet" or "still working out", stated neutrally.
+- No strawman contrasts to lift yourself up. Do not set up "there's a version of AI that just does X" or "everyone else does X" and then position against it. State your own direction positively.
+- No grand claims that your work is the most interesting thing, a shift, or a paradigm. Show that you personally find it worth building. Frame it as "the part I care about" or "the part I keep thinking about", not "the interesting part".
+- Substance over platitudes. Tie insights to what tokenmaxxing actually does: getting full value from the AI usage you already pay for, cutting waste, right-sizing models. Avoid generic builder wisdom that could be about any tool.
+- Use the strong plain word. "best", not "better".
 
 STRUCTURE:
 - Usually 2 to 4 short lines, each on its own line. Sometimes just 2 lines.
