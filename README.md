@@ -42,6 +42,8 @@ My goal is to stay at the edge of what's possible in quantum and practical appli
 
 - 🚀 I'm currently working on **uptime-react** (React-based uptime monitoring), **Workout-App** (fitness tracking), **urlsummarizer** (automated content curation), **quantum-chemistry-h2** (quantum chemistry simulations with OpenFermion), **yquantum-scramble** (quantum random number generator verification), and **FinTech-Investing-Platform** (intelligent stock analysis and trading suggestions).
 
+- I build **[Tokenmaxxing](https://www.trytokenmaxxing.com/)**, which coordinates coding agents through MCP so existing AI-plan capacity becomes saved, reviewed, resumable work instead of token burn.
+
 - 🌐 My personal portfolio website: **[brockdenton.com](https://www.brockdenton.com/)** - showcasing my professional work and projects.
 
 - 📚 I'm currently learning many things, I believe that every day is a learning opportunity. Always exploring the latest in quantum computing, emerging technologies, and new frameworks.
